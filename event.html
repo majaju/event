@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Event Registration</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="event.css">
+
+
+
+</head>
+
+<body>
+
+<header>
+
+<nav class="black">
+
+<div class="logo">
+<img src="logo.jpeg">
+</div>
+
+<ul>
+<li><a class="active" href="#section1">Home</a></li>
+<li><a href="#section2">Registration Form</a></li>
+<li><a href="#section3">Show registration</a></li>
+</ul>
+</nav>
+
+</header>
+
+<div id="section1">
+<div class="container">
+<h1>Welcome to art in motion!!</h1><br>
+<p1><b>Art is not what you see, but what you make others see. Art exhibition is a great way to increase the credibility of artists. Sharing artwork is beneficial to both artist as well as visitor. Art Exhibitions can create a spark for an artists creativity. This event is all about exhibiting art. Basically the visitors have to pay for entering the exhibition and they may buy the paintings or any art if they are willing to by consulting with the owner of the painting.<b></p1>
+</div>
+</div>
+<br><br>
+<div id="section2">
+<div class="registration">
+  <form id="registration" method="post" action="#"><br><br><br><br><br>
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="firstname" name="firstname" placeholder="Your name.." pattern="^[a-zA-Z]+((\s{1}[a-zA-Z]+)+|$)" required autofocus><br><br>
+
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lastname" name="lastname" placeholder="Your last name.." pattern="^[a-zA-Z]+((\s{1}[a-zA-Z]+)+|$)" required autofocus><br><br>
+
+    
+    <label for="mailaddress">Email:</label><br>
+    <input type="text" id="mailaddress" name="mailaddress" placeholder="Your mail address.." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required autofocus><br><br>
+<label for="mobilenumber">Mobile number:</label><br>
+<select id="num">
+<option>+ 91</option>
+<option>+ 92</option>
+<option>+ 93</option>
+<option>+ 94</option>
+<option>+ 95</option>
+</select><input type="number" name="number" id="number" placeholder="Enter your mobile number" pattern="[0-9]{10}" required autofocus><br>
+    
+<br>
+<form id="ma" action="#">
+  <label for="gender">Please select your gender:</label><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">Other</label>
+
+<br>
+  <br>  
+    <form action="#">
+<label id="type" for="type">What would you like to do in art of motion:</label><br>
+    <input type="checkbox" id="type1" name="type1" value="Artist">
+    <label for="type1">Exhibit Art</label><br>
+     <input type="checkbox" id="type2" name="type2" value="Visitor">
+    <label for="type2">Visit</label><br>
+
+
+<form action="#">
+  <label for="paintings">Type of painting you want to exhibit:</label>
+  <select name="paintings" id="paintings">
+    <option value="oil">Oil</option>
+    <option value="acrylic">Acrylic</option>
+    <option value="watercolor">Watercolor</option>
+    <option value="gouache">Gouache</option>
+ <option value="pastel">Pastel</option>
+ <option value="encaustic">Encaustic</option>
+<option value="none">None</option>
+  </select>
+<br> 
+
+<br>
+ <form action="#">
+<label  id="time" for="time">Time slot:</label><br>
+    <input type="checkbox" id="morning" name="morning" value="morning">
+    <label for="morning">Morning</label><br>
+     <input type="checkbox" id="afternoon" name="afternoon" value="afternoon">
+    <label for="afternoon">Afternoon</label><br>
+<input type="checkbox" id="evening" name="evening" value="evening">
+    <label for="evening">Evening</label><br>
+
+  
+
+    <button type="submit" class="registerbtn">Register</button>
+  </form>
+</div>
+</div>
+
+<div id="section3">
+
+<table id="display">
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+<th>Mobile Number</th>
+<th>Gender</th>
+<th>Purpose of registration</th>
+<th>Type of art you want to exhibit</th>
+<th>Time slot</th>
+</tr>
+</table>
+
+
+
+
+</div>
+<div  id="footer" class="footer-main-div">
+<center><div class="footer-social-icons">
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-google"></a>
+</div></center>
+
+
+<div class="footer-bottom">
+<p>Design by:<a href="#">Mansi codebuild</a></p>
+</div>
+</footer>
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript">
+$(document).on('click','nav ul li',function(){
+$(this).addClass('active').siblings().removeClass('active')
+})
+</script>
+
+</body>
+</html>
+
